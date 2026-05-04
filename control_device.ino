@@ -7,11 +7,11 @@
 #define LIGHT3 19
 
 // Cấu hình WiFi
-const char* ssid = "TrDuk113";          // Thay bằng tên Wi-Fi của bạn
-const char* password = "123456788";  // Thay bằng mật khẩu Wi-Fi
+const char* ssid = "your_account";          // Thay bằng tên Wi-Fi của bạn
+const char* password = "your_password";  // Thay bằng mật khẩu Wi-Fi
 
 // Cấu hình MCP Server (lấy từ chatbot Xiaozhi)
-const char* mcpEndpoint = "wss://api.xiaozhi.me/mcp/?token=xxxx";
+const char* mcpEndpoint = "wss://api.xiaozhi.me/mcp/?token=xxxx ( your_endpoint)";
 
 // Tạo đối tượng MCP client
 WebSocketMCP mcpClient;
