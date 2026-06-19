@@ -1,0 +1,39 @@
+.manage-devices-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.device-card {
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent !important;
+
+    &.online {
+        border-top-color: #2ecc71 !important;
+    }
+
+    &.offline {
+        opacity: 0.8;
+        filter: grayscale(0.5);
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .device-icon {
+        width: 45px;
+        height: 45px;
+        background: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        color: #6c5ce7;
+    }
+
+    .sensor-box {
+        i { font-size: 1.1rem; }
+        .fw-bold { font-size: 1rem; }
+    }
+}

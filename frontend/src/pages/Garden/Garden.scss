@@ -1,0 +1,56 @@
+.dashboard-content-area {
+    width: 100%;
+    padding: 30px;
+    background-color: #f4f7fe;
+    min-height: 100vh;
+}
+
+.garden-card-custom {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.garden-card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.garden-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.garden-card {
+    transition: all 0.3s ease;
+    border: none !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    background: #fff;
+}
+
+.garden-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #e9f7ef;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.badge-mode {
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}

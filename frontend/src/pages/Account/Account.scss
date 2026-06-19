@@ -1,0 +1,81 @@
+.forgot-password,
+.register-account {
+    color: rgb(30, 66, 149) !important;
+    cursor: pointer;
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0; 
+    color: #888; 
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &::before,
+    &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #dee2e6; 
+    }
+
+    &:not(:empty)::before {
+        margin-right: .75em; 
+    }
+
+    &:not(:empty)::after {
+        margin-left: .75em;
+    }
+}
+
+$sidebar-width: 280px;
+
+.profile-container {
+    transition: all 0.3s ease-in-out;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    width: 100%; // Luôn full chiều rộng
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Căn giữa nội dung theo chiều ngang
+
+    @media (min-width: 992px) {
+        &.sidebar-open {
+            padding-left: calc(#{$sidebar-width} + 30px); // Dùng padding thay vì margin
+        }
+
+        &.sidebar-closed {
+            padding-left: 30px; // Reset về padding bình thường
+        }
+    }
+
+    // Đây là khung chứa nội dung profile để nó không bị dãn quá rộng trên màn hình lớn
+    .profile-content-container {
+        width: 100%;
+        max-width: 1200px; // Tăng lên một chút để nhìn cân đối hơn
+        margin: 0 auto;    // Đảm bảo luôn nằm giữa
+        transition: all 0.3s ease;
+    }
+}
+
+// .transition-all {
+//     transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// // Nếu bạn muốn hiệu ứng trượt vào từ bên phải mượt hơn (không cần thư viện Animate.css)
+// @keyframes fadeInRight {
+//     from {
+//         opacity: 0;
+//         transform: translateX(20px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// .animate__fadeInRight {
+//     animation: fadeInRight 0.1s ease-out;
+// }

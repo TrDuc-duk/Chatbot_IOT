@@ -1,0 +1,41 @@
+.forgot-password,
+.register-account {
+    color: rgb(30, 66, 149) !important;
+    cursor: pointer;
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0; 
+    color: #888; 
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &::before,
+    &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #dee2e6; 
+    }
+
+    &:not(:empty)::before {
+        margin-right: .75em; 
+    }
+
+    &:not(:empty)::after {
+        margin-left: .75em;
+    }
+}
+
+// .forgot-password, .register-account {
+//     cursor: pointer;
+//     text-decoration: none;
+//     color: #007bff;
+//     font-size: 0.9rem;
+    
+//     &:hover {
+//         text-decoration: underline;
+//     }
+// }

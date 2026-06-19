@@ -1,0 +1,70 @@
+$sidebar-width: 280px;
+$nav-blue: rgb(19, 58, 148);
+
+.custom-sidebar {
+    background-color: $nav-blue !important;
+    width: $sidebar-width !important;
+    border: none !important;
+    border-radius: 0 25px 25px 0 !important;
+    transition: transform 0.3s ease-in-out !important;
+
+    .close-btn {
+        color: white;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.2s;
+        &:hover { opacity: 1; }
+    }
+
+    .nav-link-item {
+        color: rgba(255, 255, 255, 0.7) !important;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        padding-left: 1.5vw;
+        margin-bottom: 8px;
+        border-radius: 12px;
+        text-decoration: none;
+        display: block;
+        
+        &:hover, &.active {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white !important;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .offcanvas.custom-sidebar {
+        position: fixed !important;
+        transform: none !important;
+        visibility: visible !important;
+        display: flex !important;
+
+        &:not(.show) {
+            transform: translateX(-100%) !important;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+.dropdown-item {
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: rgb(66, 65, 65) !important;
+
+    &:hover {
+        background-color: white !important;
+        color: rgb(30, 66, 149) !important;
+    }
+    &.active{
+        background-color: white !important;
+        color: rgb(66, 65, 65) !important;
+    }
+      
+    &.active:hover {
+        background-color: white !important;
+        color: rgb(30, 66, 149) !important;
+    }
+}

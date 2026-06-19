@@ -1,0 +1,46 @@
+$sidebar-width: 280px;
+
+.manage-users-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    transition: transform 0.2s;
+    &:hover { transform: translateY(-5px); }
+    
+    .icon-box {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+}
+
+.user-table {
+    th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        color: #636e72;
+    }
+    td { padding: 1rem 0.5rem; }
+    tr:hover { background-color: #fcfcfc; }
+}
+
+// Background soft colors cho icon
+.bg-soft-primary { background-color: #eef2ff; }
+.bg-soft-danger { background-color: #fff5f5; }
+.bg-soft-success { background-color: #f0fff4; }
+
+.user-modal {
+    .modal-content {
+        border: none;
+        border-radius: 1.25rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+}
